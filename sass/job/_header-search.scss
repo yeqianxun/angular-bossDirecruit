@@ -1,0 +1,131 @@
+.search-choose{
+	background:white;
+	font-size:1.6rem;
+	position:relative;
+	@at-root .job-search{	
+	    background-color: #53cac3;
+	    .search-content{
+	    	@include span(9);
+	    	height:4.7rem;
+	    	color:white;
+	    	padding-left:1.5rem;
+	    	display:inline-block;
+	    	vertical-align:middle;
+	    	   &:after{
+		    		content:" ";
+		    		display:inline-block;
+		    		height:100%;
+		    		vertical-align: middle;
+	   			 }
+	    }
+	    .search-operation{
+	    	@include span(3);
+	    	height:4.7rem;
+	    	padding:1.5rem 0rem 1.5rem 0rem ;
+	    	display:inline-block;
+	    	vertical-align:middle;
+	    	a{
+	    		@include span(6);
+	    		display:inline-block;
+	    		color:white;
+	    		height:100%;
+	    		text-align:center;
+	    		&:after{
+		    		content:" ";
+		    		display:inline-block;
+		    		height:100%;
+		    		vertical-align: middle;
+	   		 	}
+	    	}
+	    	.icon-jiahao,.icon-search{
+	    		height:100%;
+	    		text-align:center;
+	    		font-size:2rem;
+	    		vertical-align: middle;
+	    	}
+	    	.jiahao{
+	    		border-right:1px solid #a1e1dd;
+	    	}
+	    	&:after{
+	    		content:" ";
+	    		display:inline-block;
+	    		height:100%;
+	    		vertical-align: middle;
+	   		 }
+	    }
+	   
+	}
+	@at-root .job-choose{
+	    height:3.3rem;
+	    position:relative;   
+		    	.chooseItem{
+					@include span(3);
+					text-align:center;
+					height:3.3rem;
+					font-size:1.2rem;
+					color:#aeaeae;
+					cursor:pointer;
+					vertical-align:middle;
+					:after{
+						content:" ";
+						display:inline-block;
+						height:100%;
+						vertical-align: middle;
+					}
+					.icon-bottom{
+						margin-left:.5rem;
+					}
+					.require{
+						position:absolute;
+						top:3.3rem;
+						left:0;
+						min-height:300px;
+						width:100%;
+						background:#e9efef;
+						dt,dd{
+							margin-left:1rem;
+							h3{
+								margin-top:1rem;
+							}
+						}
+						dd{
+							display:inline-block;
+							background:white;
+							width:6rem;
+							height:3rem;
+							text-align:center;
+							line-height:3rem;
+							@include border-radius(.5rem );
+							margin:.5rem .5rem;
+							cursor:pointer;
+							&.select{
+							   background:#53cac3;
+						    }
+
+						}
+						.finance,.people_num,.career{
+						   text-align:left;					
+					    }
+						.reset,.ok{
+							@include span(6);
+							height:3rem;
+
+						}
+						.ok{
+							background:#53cac3;
+							color:white;
+						}
+						.reset{
+							background:white;
+							color:#797979;
+						}
+					}
+					
+			    }
+    }
+}
+
+
+
+
+

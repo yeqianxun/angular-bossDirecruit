@@ -1,0 +1,821 @@
+/* line 21, C:/Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 14, ../sass/base/_base.scss */
+html {
+  font-size: 62.5%;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 20, ../sass/base/_base.scss */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #e9efef;
+}
+
+/* line 28, ../sass/base/_base.scss */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 32, ../sass/base/_base.scss */
+li {
+  list-style: none;
+}
+
+/* line 35, ../sass/base/_base.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 38, ../sass/base/_base.scss */
+dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 42, ../sass/base/_base.scss */
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 46, ../sass/base/_base.scss */
+img {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 51, ../sass/base/_base.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 54, ../sass/base/_base.scss */
+.clearfix:after {
+  content: " ";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+
+/* line 1, ../sass/job/_header-search.scss */
+.search-choose {
+  background: white;
+  font-size: 1.6rem;
+  position: relative;
+}
+/* line 5, ../sass/job/_header-search.scss */
+.job-search {
+  background-color: #53cac3;
+}
+/* line 7, ../sass/job/_header-search.scss */
+.job-search .search-content {
+  width: 75%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  height: 4.7rem;
+  color: white;
+  padding-left: 1.5rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 14, ../sass/job/_header-search.scss */
+.job-search .search-content:after {
+  content: " ";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+/* line 21, ../sass/job/_header-search.scss */
+.job-search .search-operation {
+  width: 25%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  height: 4.7rem;
+  padding: 1.5rem 0rem 1.5rem 0rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 27, ../sass/job/_header-search.scss */
+.job-search .search-operation a {
+  width: 50%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  display: inline-block;
+  color: white;
+  height: 100%;
+  text-align: center;
+}
+/* line 33, ../sass/job/_header-search.scss */
+.job-search .search-operation a:after {
+  content: " ";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+/* line 40, ../sass/job/_header-search.scss */
+.job-search .search-operation .icon-jiahao, .job-search .search-operation .icon-search {
+  height: 100%;
+  text-align: center;
+  font-size: 2rem;
+  vertical-align: middle;
+}
+/* line 46, ../sass/job/_header-search.scss */
+.job-search .search-operation .jiahao {
+  border-right: 1px solid #a1e1dd;
+}
+/* line 49, ../sass/job/_header-search.scss */
+.job-search .search-operation:after {
+  content: " ";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+/* line 58, ../sass/job/_header-search.scss */
+.job-choose {
+  height: 3.3rem;
+  position: relative;
+}
+/* line 61, ../sass/job/_header-search.scss */
+.job-choose .chooseItem {
+  width: 25%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  text-align: center;
+  height: 3.3rem;
+  font-size: 1.2rem;
+  color: #aeaeae;
+  cursor: pointer;
+  vertical-align: middle;
+}
+/* line 69, ../sass/job/_header-search.scss */
+.job-choose .chooseItem :after {
+  content: " ";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+/* line 75, ../sass/job/_header-search.scss */
+.job-choose .chooseItem .icon-bottom {
+  margin-left: .5rem;
+}
+/* line 78, ../sass/job/_header-search.scss */
+.job-choose .chooseItem .require {
+  position: absolute;
+  top: 3.3rem;
+  left: 0;
+  min-height: 300px;
+  width: 100%;
+  background: #e9efef;
+}
+/* line 85, ../sass/job/_header-search.scss */
+.job-choose .chooseItem .require dt, .job-choose .chooseItem .require dd {
+  margin-left: 1rem;
+}
+/* line 87, ../sass/job/_header-search.scss */
+.job-choose .chooseItem .require dt h3, .job-choose .chooseItem .require dd h3 {
+  margin-top: 1rem;
+}
+/* line 91, ../sass/job/_header-search.scss */
+.job-choose .chooseItem .require dd {
+  display: inline-block;
+  background: white;
+  width: 6rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  -moz-border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  margin: .5rem .5rem;
+  cursor: pointer;
+}
+/* line 101, ../sass/job/_header-search.scss */
+.job-choose .chooseItem .require dd.select {
+  background: #53cac3;
+}
+/* line 106, ../sass/job/_header-search.scss */
+.job-choose .chooseItem .require .finance, .job-choose .chooseItem .require .people_num, .job-choose .chooseItem .require .career {
+  text-align: left;
+}
+/* line 109, ../sass/job/_header-search.scss */
+.job-choose .chooseItem .require .reset, .job-choose .chooseItem .require .ok {
+  width: 50%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  height: 3rem;
+}
+/* line 114, ../sass/job/_header-search.scss */
+.job-choose .chooseItem .require .ok {
+  background: #53cac3;
+  color: white;
+}
+/* line 118, ../sass/job/_header-search.scss */
+.job-choose .chooseItem .require .reset {
+  background: white;
+  color: #797979;
+}
+
+/* line 1, ../sass/job/_job-list.scss */
+.jobLists {
+  width: 100%;
+  font-size: 1.6rem;
+  margin-bottom: 6rem;
+}
+/* line 5, ../sass/job/_job-list.scss */
+.jobLists .jobItem {
+  margin: 1rem 1rem;
+  background: white;
+}
+/* line 8, ../sass/job/_job-list.scss */
+.jobLists .jobItem a {
+  color: #797979;
+  display: block;
+}
+/* line 15, ../sass/job/_job-list.scss */
+.jobLists h3.job {
+  margin: 0;
+  width: 66.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  line-height: 4rem;
+  padding-left: 1rem;
+  color: #333333;
+}
+/* line 22, ../sass/job/_job-list.scss */
+.jobLists .pay {
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  line-height: 4rem;
+  text-align: right;
+  padding-right: 1rem;
+  color: #fa716a;
+  font-weight: 600;
+}
+/* line 30, ../sass/job/_job-list.scss */
+.job_detail {
+  padding-left: 1rem;
+  font-size: 1.4rem;
+  margin-bottom: .5rem;
+}
+/* line 34, ../sass/job/_job-list.scss */
+.job_detail .name_pro, .job_detail .loc_exp_edu {
+  padding: .5rem  .5rem .5rem  0;
+}
+/* line 37, ../sass/job/_job-list.scss */
+.job_detail .job-location, .job_detail .job-edu, .job_detail .job-exp, .job_detail .jobName, .job_detail .process {
+  margin-right: .5rem;
+}
+/* line 40, ../sass/job/_job-list.scss */
+.job_detail .icon-location, .job_detail .icon-benke-, .job_detail .icon-bag {
+  margin-right: .5rem;
+}
+/* line 44, ../sass/job/_job-list.scss */
+.jobLists .hr_info {
+  color: #69d1cb;
+  border-top: 1px solid #69d1cb;
+  margin: 0 1rem;
+  padding-top: .5rem;
+}
+/* line 49, ../sass/job/_job-list.scss */
+.jobLists .hr_info img {
+  vertical-align: middle;
+  height: auto;
+  width: auto;
+}
+/* line 54, ../sass/job/_job-list.scss */
+.jobLists .hr_info .hrName {
+  border-right: 1px solid #69d1cb;
+  margin-right: 1rem;
+  padding-right: .6rem;
+}
+/* line 59, ../sass/job/_job-list.scss */
+.jobLists .hr_info span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 1, ../sass/job/_my-tabs.scss */
+.view-tabs {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: white;
+  width: 100%;
+  height: 4rem;
+}
+/* line 9, ../sass/job/_my-tabs.scss */
+.view-tabs .tabItem {
+  line-height: 4rem;
+  width: 25%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+/* line 12, ../sass/job/_my-tabs.scss */
+.view-tabs .tabItem a {
+  display: inline-block;
+  height: 4rem;
+  width: 100%;
+  color: #7d7d7d;
+  text-align: center;
+}
+/* line 18, ../sass/job/_my-tabs.scss */
+.view-tabs .tabItem a.active {
+  color: #53cac3;
+}
+/* line 22, ../sass/job/_my-tabs.scss */
+.view-tabs .tabItem .icon-earth, .view-tabs .tabItem .icon-house, .view-tabs .tabItem .icon-xiaoxi, .view-tabs .tabItem .icon-vipuser {
+  width: 100%;
+  display: block;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+/* line 30, ../sass/job/_my-tabs.scss */
+.view-tabs .tabItem .icon-text {
+  font-size: 1.2rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  display: block;
+}
+
+/* line 1, ../sass/userInfo/_user-info.scss */
+#userInfo {
+  background: #4fc8bf;
+  padding-bottom: 2rem;
+}
+/* line 4, ../sass/userInfo/_user-info.scss */
+#userInfo .icon-shezhi {
+  float: right;
+  padding: 1rem 1rem 0 0;
+  font-size: 2rem;
+  color: white;
+}
+/* line 10, ../sass/userInfo/_user-info.scss */
+.header-bottom {
+  padding-top: 1rem;
+}
+/* line 12, ../sass/userInfo/_user-info.scss */
+.header-bottom .user_head {
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  text-align: center;
+  height: 6rem;
+}
+/* line 16, ../sass/userInfo/_user-info.scss */
+.header-bottom .user_head img {
+  width: 6rem;
+  -moz-border-radius: 4rem;
+  -webkit-border-radius: 4rem;
+  border-radius: 4rem;
+}
+/* line 21, ../sass/userInfo/_user-info.scss */
+.header-bottom .name_edu {
+  width: 25%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  height: 6rem;
+  color: #f7f7f7;
+}
+/* line 25, ../sass/userInfo/_user-info.scss */
+.header-bottom .name_edu h2 {
+  margin: 1rem 0 .5rem 0;
+}
+/* line 28, ../sass/userInfo/_user-info.scss */
+.header-bottom .name_edu .user_edu {
+  font-size: 1.2rem;
+  text-align: center;
+  display: inline-block;
+  padding-left: .5rem;
+}
+/* line 35, ../sass/userInfo/_user-info.scss */
+.header-bottom .jl_xg {
+  width: 41.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  float: right;
+  text-align: right;
+  color: #f7f7f7;
+}
+/* line 40, ../sass/userInfo/_user-info.scss */
+.header-bottom .jl_xg span {
+  display: inline-block;
+  height: 6rem;
+  line-height: 6rem;
+  float: right;
+  font-size: 2rem;
+  vertical-align: middle;
+}
+/* line 47, ../sass/userInfo/_user-info.scss */
+.header-bottom .jl_xg span.icon-you {
+  color: #f7f7f7;
+}
+
+/* line 57, ../sass/userInfo/_user-info.scss */
+#com_inter .communicated, #com_inter .interview {
+  width: 50%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  background: white;
+  text-align: center;
+}
+/* line 61, ../sass/userInfo/_user-info.scss */
+#com_inter .communicated strong, #com_inter .interview strong {
+  font-size: 2.4rem;
+  color: #282d27;
+}
+/* line 65, ../sass/userInfo/_user-info.scss */
+#com_inter .communicated span, #com_inter .interview span {
+  color: #747673;
+  font-weight: 500;
+}
+
+/* line 1, ../sass/userInfo/_menu-lists.scss */
+#menu-lists {
+  margin-top: 1rem;
+  background: white;
+  border: 1px solid #e4e9e3;
+}
+/* line 5, ../sass/userInfo/_menu-lists.scss */
+#menu-lists li {
+  width: 25%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  border: 1px solid #e4e9e3;
+  border-top: none;
+  border-right: none;
+  color: #747673;
+}
+/* line 11, ../sass/userInfo/_menu-lists.scss */
+#menu-lists li p {
+  text-align: center;
+}
+/* line 14, ../sass/userInfo/_menu-lists.scss */
+#menu-lists li p span[class^="icon-"] {
+  font-size: 2rem;
+}
+/* line 20, ../sass/userInfo/_menu-lists.scss */
+#bottom-lists {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  border: 1px solid #e4e9e3;
+}
+/* line 25, ../sass/userInfo/_menu-lists.scss */
+#bottom-lists .extraItem {
+  height: 5rem;
+  display: block;
+  color: #747673;
+  background: white;
+  font-size: 1.6rem;
+  border-top: 1px solid #e4e9e3;
+}
+/* line 32, ../sass/userInfo/_menu-lists.scss */
+#bottom-lists .extraItem span[class^="icon-"] {
+  vertical-align: middle;
+  margin-right: .5rem;
+  margin-left: 1rem;
+}
+/* line 38, ../sass/userInfo/_menu-lists.scss */
+#bottom-lists .extraItem span.icon-you {
+  float: right;
+  line-height: 5rem;
+}
+/* line 42, ../sass/userInfo/_menu-lists.scss */
+#bottom-lists .extraItem:after {
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  content: " ";
+}
+/* line 48, ../sass/userInfo/_menu-lists.scss */
+#bottom-lists .extraItem i {
+  color: #aaaca9;
+}
+/* line 53, ../sass/userInfo/_menu-lists.scss */
+#bottom-lists .last-child {
+  margin-top: 1rem;
+}
+
+/* line 2, ../sass/company/_company-header.scss */
+.job-search2 .company-title {
+  text-align: center;
+  background: #53cac3;
+  line-height: 4.7rem;
+  color: #e0f5f4;
+}
+/* line 8, ../sass/company/_company-header.scss */
+.search-operation2 {
+  height: 4.7rem;
+  padding: 1.5rem 0rem 1.5rem 0rem;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+}
+/* line 17, ../sass/company/_company-header.scss */
+.search-operation2 a {
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  color: white;
+  height: 100%;
+  text-align: center;
+}
+/* line 22, ../sass/company/_company-header.scss */
+.search-operation2 a:after {
+  content: " ";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+/* line 29, ../sass/company/_company-header.scss */
+.search-operation2 .icon-search {
+  font-size: 2rem;
+}
+
+/* line 36, ../sass/company/_company-header.scss */
+.job-choose:after {
+  content: " ";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+/* line 42, ../sass/company/_company-header.scss */
+.job-choose .chooseItem2 {
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  text-align: center;
+  line-height: 2.3rem;
+  font-size: 1.2rem;
+  color: #aeaeae;
+  cursor: pointer;
+  margin: .7rem 0 .7rem 0;
+  border-right: 1px solid #e4e9e3;
+}
+/* line 51, ../sass/company/_company-header.scss */
+.job-choose .chooseItem2 .icon-bottom {
+  margin-left: .5rem;
+}
+/* line 54, ../sass/company/_company-header.scss */
+.job-choose .chooseItem2 .require {
+  position: absolute;
+  top: 3.3rem;
+  left: 0;
+  min-height: 300px;
+  width: 100%;
+  background: #e9efef;
+}
+/* line 61, ../sass/company/_company-header.scss */
+.job-choose .chooseItem2 .require dt, .job-choose .chooseItem2 .require dd {
+  margin-left: 1rem;
+}
+/* line 63, ../sass/company/_company-header.scss */
+.job-choose .chooseItem2 .require dt h3, .job-choose .chooseItem2 .require dd h3 {
+  margin-top: 1rem;
+}
+/* line 67, ../sass/company/_company-header.scss */
+.job-choose .chooseItem2 .require dd {
+  display: inline-block;
+  background: white;
+  width: 6rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  -moz-border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  margin: .5rem .5rem;
+  cursor: pointer;
+}
+/* line 77, ../sass/company/_company-header.scss */
+.job-choose .chooseItem2 .require dd.select {
+  background: #53cac3;
+}
+/* line 82, ../sass/company/_company-header.scss */
+.job-choose .chooseItem2 .require .finance, .job-choose .chooseItem2 .require .people_num, .job-choose .chooseItem2 .require .career {
+  text-align: left;
+}
+/* line 85, ../sass/company/_company-header.scss */
+.job-choose .chooseItem2 .require .reset, .job-choose .chooseItem2 .require .ok {
+  width: 50%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  height: 3rem;
+}
+/* line 90, ../sass/company/_company-header.scss */
+.job-choose .chooseItem2 .require .ok {
+  background: #53cac3;
+  color: white;
+}
+/* line 94, ../sass/company/_company-header.scss */
+.job-choose .chooseItem2 .require .reset {
+  background: white;
+  color: #797979;
+}
+/* line 1, ../sass/company/_company-list.scss */
+.company-lists {
+  margin: 1rem 2rem;
+}
+/* line 3, ../sass/company/_company-list.scss */
+.company-lists .companyItem {
+  background: white;
+  padding-top: .5rem;
+  margin-bottom: 1rem;
+}
+/* line 7, ../sass/company/_company-list.scss */
+.company-lists .companyItem .companyImg {
+  width: 20.83333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+/* line 10, ../sass/company/_company-list.scss */
+.companyInfo {
+  width: 79.16667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  padding-left: 1rem;
+}
+/* line 13, ../sass/company/_company-list.scss */
+.companyInfo .companyName {
+  color: #363636;
+  font-size: 1.8rem;
+}
+/* line 17, ../sass/company/_company-list.scss */
+.companyInfo .extraInfo {
+  border-top: 1px solid #ededed;
+  padding: 1rem 0 1rem 0;
+  color: #9d9d9d;
+}
+/* line 21, ../sass/company/_company-list.scss */
+.companyInfo .extraInfo .icon-you {
+  float: right;
+}
+/* line 26, ../sass/company/_company-list.scss */
+.company-lists .companyItem a {
+  color: #838383;
+}
+
+/* line 1, ../sass/message/_message-header.scss */
+.message {
+  background: #53cac3;
+  font-size: 1.6rem;
+  padding-top: 1rem;
+}
+/* line 5, ../sass/message/_message-header.scss */
+.message-header {
+  text-align: center;
+  width: 12rem;
+  height: 3rem;
+  margin: 0rem auto;
+  -moz-border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #fff;
+}
+/* line 12, ../sass/message/_message-header.scss */
+.message-header .chat, .message-header .inter {
+  line-height: 3rem;
+  width: 50%;
+  color: white;
+  display: inline-block;
+}
+/* line 17, ../sass/message/_message-header.scss */
+.message-header .chat.active, .message-header .inter.active {
+  background: white;
+  color: #53cac3;
+}
+/* line 23, ../sass/message/_message-header.scss */
+.chatList {
+  background: white;
+  height: 3rem;
+  margin-top: 1rem;
+  position: relative;
+}
+/* line 28, ../sass/message/_message-header.scss */
+.chatList .chatItem {
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  line-height: 3rem;
+  text-align: center;
+}
+/* line 32, ../sass/message/_message-header.scss */
+.chatList .chatItem a {
+  color: #b8b8b8;
+}
+/* line 35, ../sass/message/_message-header.scss */
+.chatList .chatItem.active {
+  color: #53cac3;
+}
+/* line 39, ../sass/message/_message-header.scss */
+.chatList .underline {
+  background-color: #53cac3;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  width: 33.33333%;
+}
+
+/* line 1, ../sass/message/_message-list.scss */
+.message-lists {
+  margin: 1rem 1rem;
+  background: white;
+}
+/* line 4, ../sass/message/_message-list.scss */
+.message-lists .messItem {
+  border-bottom: 1px solid #b8b8b8;
+}
+/* line 6, ../sass/message/_message-list.scss */
+.message-lists .messItem a {
+  display: block;
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+/* line 10, ../sass/message/_message-list.scss */
+.message-lists .messItem .messImg {
+  width: 25%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  padding: .5rem .5rem .5rem .5rem;
+}
+/* line 14, ../sass/message/_message-list.scss */
+.message-lists .messItem .messInfo {
+  width: 75%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  position: relative;
+}
+/* line 17, ../sass/message/_message-list.scss */
+.message-lists .messItem .messInfo h3 {
+  font-size: 2rem;
+  color: #363636;
+  margin-top: .5rem;
+}
+/* line 22, ../sass/message/_message-list.scss */
+.message-lists .messItem .messInfo p {
+  font-size: 1.4rem;
+  color: #797979;
+}
+/* line 26, ../sass/message/_message-list.scss */
+.message-lists .messItem .messInfo .text {
+  color: #57cbc4;
+}
+/* line 29, ../sass/message/_message-list.scss */
+.message-lists .messItem .messInfo span[class^="icon-"] {
+  margin-left: .5rem;
+  margin-right: .5rem;
+  display: inline-block;
+}
+/* line 34, ../sass/message/_message-list.scss */
+.message-lists .messItem .messInfo time {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: #c1c1c1;
+  font-size: 1.4rem;
+}
+
+/*# sourceMappingURL=main.css.map */

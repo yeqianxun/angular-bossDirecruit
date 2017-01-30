@@ -1,0 +1,59 @@
+#menu-lists{
+	margin-top:1rem;
+	background:white;
+	border:1px solid #e4e9e3;
+	li{
+		@include span(3);
+		border:1px solid #e4e9e3;
+		border-top:none;
+		border-right:none;
+		color:#747673;
+		p{
+			text-align:center;
+			// margin:.6rem 0;
+			span[class^="icon-"]{
+				font-size: 2rem;
+			}
+		}
+	}
+
+	@at-root #bottom-lists{
+		margin-top:1rem;
+		margin-bottom:5rem;
+		
+		border:1px solid #e4e9e3;
+		.extraItem{
+			height:5rem;
+			display: block;
+			color:#747673;
+			background:white;
+			font-size:1.6rem;
+			border-top:1px solid #e4e9e3;
+			span[class^="icon-"]{
+				vertical-align:middle;
+				margin-right:.5rem;
+				margin-left:1rem;
+				
+			}
+			span.icon-you{
+				float:right;
+				line-height:5rem;
+			}
+			&:after{
+				height:100%;
+				vertical-align:middle;
+				display:inline-block;
+				content:" ";
+			}
+			i{
+				color:#aaaca9;
+			}
+			
+		}
+		.last-child{
+			margin-top:1rem;
+		}
+	}
+}
+
+

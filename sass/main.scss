@@ -1,0 +1,21 @@
+@import "susy",
+		"compass",
+		"base/base"
+		;
+
+@import "job/header-search",
+		"job/job-list",
+		"job/my-tabs"
+		;
+
+@import "userInfo/user-info",
+		"userInfo/menu-lists"
+		;
+
+
+@import "company/company-header",
+		"company/company-list"
+		;
+
+@import "message/message-header",
+		"message/message-list";

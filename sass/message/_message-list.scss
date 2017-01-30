@@ -1,0 +1,44 @@
+.message-lists{
+	margin:1rem 1rem;
+	background:white;
+	.messItem{
+		border-bottom:1px solid #b8b8b8;
+		a{
+			display:block;
+			@include span(12);
+		}
+		.messImg{
+			@include span(3);
+			padding:.5rem .5rem .5rem .5rem;
+		}
+		.messInfo{
+			@include span(9);
+			position:relative;
+			h3{
+				font-size:2rem;
+				color:#363636;
+				margin-top:.5rem;
+			}
+			p{
+				font-size:1.4rem;
+				color:#797979;		
+			}
+			.text{
+				color:#57cbc4;
+			}
+			span[class^="icon-"]{
+				margin-left:.5rem;
+				margin-right:.5rem;
+				display:inline-block;
+			}
+			time{
+				position:absolute;
+				top:0.5rem;
+				right:0.5rem;
+				color:#c1c1c1;	
+				font-size:1.4rem;
+			}
+		}
+	}
+	
+}

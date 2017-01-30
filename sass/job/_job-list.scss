@@ -1,0 +1,65 @@
+.jobLists{
+	width:100%;
+	font-size:1.6rem;
+	margin-bottom:6rem;
+	.jobItem{
+		margin:1rem 1rem;
+		background:white;
+		a{
+			color:#797979;
+		    display:block;
+	    }
+	}
+	
+	
+	h3.job{
+			margin:0;
+			@include span(8);
+			line-height:4rem;
+			padding-left:1rem;
+			color:#333333;
+	}
+	.pay{
+		@include span(4);
+		line-height:4rem;
+		text-align:right;
+		padding-right:1rem;
+		color:#fa716a;
+		font-weight:600;
+	}
+	@at-root .job_detail{
+		padding-left:1rem;
+		font-size:1.4rem;
+		margin-bottom:.5rem;
+		.name_pro,.loc_exp_edu{
+			padding:.5rem  .5rem .5rem  0;
+		}
+		.job-location,.job-edu,.job-exp,.jobName,.process{
+			margin-right:.5rem;
+		}
+		.icon-location,.icon-benke-,.icon-bag{
+			margin-right:.5rem;
+		}
+	}
+	.hr_info{
+		color:#69d1cb;
+		border-top:1px solid #69d1cb;
+		margin: 0 1rem;
+		padding-top:.5rem;
+		img{
+			vertical-align: middle;
+			height:auto;
+			width:auto;
+		}
+		.hrName{
+			border-right:1px solid #69d1cb;
+			margin-right:1rem;
+			padding-right:.6rem;
+		}
+		span{
+			display:inline-block;
+			vertical-align:middle;
+		}
+	}
+
+}

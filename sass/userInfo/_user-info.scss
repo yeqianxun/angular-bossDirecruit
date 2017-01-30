@@ -1,0 +1,70 @@
+#userInfo{
+	background:#4fc8bf;
+	padding-bottom:2rem;
+	.icon-shezhi{
+		float:right;
+		padding:1rem 1rem 0 0;
+		font-size:2rem;
+		color:white;
+	}
+	@at-root .header-bottom{
+		padding-top:1rem;
+		.user_head{
+			@include span(4);
+			text-align:center;
+			height:6rem;
+			img{
+				width:6rem;
+				@include border-radius(4rem);
+			}
+	    }
+		.name_edu{
+			@include span(3);
+			height:6rem;
+			color:#f7f7f7;
+			h2{
+				margin:1rem 0 .5rem 0;
+			}
+			.user_edu{
+				font-size:1.2rem;
+				text-align:center;
+				display:inline-block;
+				padding-left:.5rem;
+			}
+		}
+		.jl_xg{
+			@include span(5);
+			float:right;
+			text-align:right;
+			color:#f7f7f7;
+			span{
+				display:inline-block;
+				height: 6rem;
+				line-height:6rem;
+				float:right;
+				font-size:2rem;
+				vertical-align:middle;
+				&.icon-you{
+					color:#f7f7f7;
+				}
+			}
+		}
+	}
+	
+}
+
+#com_inter{
+	.communicated,.interview{
+		@include span(6);
+		background:white;
+		text-align:center;
+		strong{
+			font-size:2.4rem;
+			color:#282d27;
+		}
+		span{
+			color:#747673;
+			font-weight:500;
+		}
+	}
+}

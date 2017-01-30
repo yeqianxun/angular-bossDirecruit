@@ -1,0 +1,30 @@
+.company-lists{
+	margin:1rem 2rem;	
+	.companyItem{
+		background:white;
+		padding-top:.5rem;
+		margin-bottom:1rem;
+		.companyImg{
+			@include span(2.5);
+		}
+		@at-root .companyInfo{
+			@include span(9.5);
+			padding-left:1rem;
+				.companyName{
+					color:#363636;
+					 font-size:1.8rem;
+				}
+				.extraInfo{
+					border-top:1px solid #ededed;
+					padding:1rem 0 1rem 0;
+					color:#9d9d9d;
+					.icon-you{
+						float:right;
+					}
+				}
+		}
+		a{
+			color:#838383;
+		}
+	}
+}

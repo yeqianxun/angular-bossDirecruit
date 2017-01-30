@@ -1,0 +1,61 @@
+
+$susy-box-sizing:border-box;
+$susy-columns:12;
+$susy-gutters:.25;
+$susy:(
+	global-box-sizing:$susy-box-sizing,
+	gutters:$susy-gutters,
+	columns:$susy-columns,
+	gutter-position:inside
+);
+
+@include border-box-sizing();
+
+html{
+	font-size:62.5%;
+	// -webkit-text-adjust:100%;
+		height:100%;
+		width:100%;
+}
+body{
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+	background-color:#e9efef;
+
+}
+ul{
+	margin:0;
+	padding:0;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+dl,dt,dd{
+	margin:0;
+	padding:0;
+}
+h1,h2,h3,h4,h5{
+	margin:0;
+	padding:0;
+}
+img{
+	border:none;
+	width:100%;
+	height:100%;
+}
+.clearfix{
+	*zoom:1;
+}
+.clearfix:after{
+	content:" ";
+	display:block;
+	overflow:hidden;
+	visibility:hidden;
+	height:0;
+	clear:both;
+}

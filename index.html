@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bossWebApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+	<title>angular-bossDirecruit</title>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/main.css">
+	
+	<script src="libs/bower_components/angular/angular.js"></script>
+	<script src="libs/bower_components/angular-route/angular-route.js"></script>
+	<script src="libs/bower_components/angular-resource/angular-resource.js"></script>
+
+	<script src="app.module.js"></script>
+	<script src="app.config.js"></script>
+
+	<script src="core/core.module.js"></script>
+	<script src="core/companyResource/companyResource.module.js"></script>
+	<script src="core/companyResource/companyResource.service.js"></script>
+	<script src="core/customize.myTabs.js"></script>
+
+	<script src="view/job-lists/job-list.module.js"></script>
+	<script src="view/job-lists/job-list.components.js"></script>
+
+	<script src="view/company-lists/company-list.module.js"></script>
+	<script src="view/company-lists/company-list.components.js"></script>
+
+	<script src="view/message/message-list.module.js"></script>
+	<script src="view/message/message-list.components.js"></script>
+
+	<script src="view/userInfo/user-info.module.js"></script>
+	<script src="view/userInfo/user-info.components.js"></script>
+
+
+
+
+
+</head>
+<body>
+	<div class="view-container">
+		<div class="view-frame" ng-view></div>
+		<div class="view-tabs" my-tabs></div>
+	</div>
+
+</body>
+</html>

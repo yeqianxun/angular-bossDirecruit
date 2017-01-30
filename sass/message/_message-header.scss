@@ -1,0 +1,48 @@
+.message{
+	background:#53cac3;
+	font-size:1.6rem;
+	padding-top:1rem;
+	@at-root .message-header{
+		text-align:center;
+		width:12rem;
+		height:3rem;
+		margin:0rem auto;
+		@include border-radius(.5rem);
+		border:1px solid #fff;
+		.chat,.inter{	
+			line-height:3rem;
+			width:50%;	
+			color:white;
+			display:inline-block;
+			&.active{
+				background:white;
+				color:#53cac3;
+			}
+		}
+	}
+	@at-root .chatList{
+		background:white;
+		height:3rem;
+		margin-top:1rem;
+		position:relative;
+		.chatItem{
+			@include span(4);
+			line-height:3rem;
+			text-align:center;
+			a{
+				color:#b8b8b8;
+			}
+			&.active{
+				color:#53cac3;
+			}
+		}
+		.underline{
+			background-color:#53cac3;
+			position:absolute;
+			bottom:0;
+			right:0;
+			height:2px;
+			width:span(4);
+		}
+	}
+}
