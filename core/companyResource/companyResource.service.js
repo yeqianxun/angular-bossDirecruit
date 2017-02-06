@@ -5,16 +5,16 @@
 angular.module("core.company")
 	   .factory("companyResource",["$resource",function ($resource){
 
-			return $resource("company_json/:companyId.:format",{format:"json"},{
+			return $resource("resource_json/:paramsId.:format",{format:"json"},{
 				query :{
 					method : "GET",
-					params: {companyId:"companyLists"},
+					params: {paramsId:"companyLists"},
 					isArray:true
 				}
 			})
 		}])
 	   .factory("messageList",["$resource",function ($resource){
-		   	return $resource("company_json/:messageList.:format",{format:"json"},{
+		   	return $resource("resource_json/:messageList.:format",{format:"json"},{
 		   		query:{
 		   			method:"GET",
 		   			params:{messageList:"messageLists"},

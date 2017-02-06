@@ -1,0 +1,22 @@
+.job-detail-title{
+		@extend .bgColor;
+		// height:4.7rem;
+		line-height:4.7rem;
+		.detail-head-left{
+			@include span(6);
+			.job-share{
+				font-weight:400;
+			}
+		}
+		.detail-head-right{
+			@include span(6);
+			text-align:right;
+		}
+		span[class^="icon-"]{
+			display:inline-block;
+			line-height: 4.7rem;
+			width:4rem;
+			color:white;
+			text-align:center;
+		}
+}

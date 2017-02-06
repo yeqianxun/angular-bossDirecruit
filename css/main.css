@@ -57,11 +57,16 @@ img {
 }
 
 /* line 51, ../sass/base/_base.scss */
+figure {
+  margin: 0;
+}
+
+/* line 54, ../sass/base/_base.scss */
 .clearfix {
   *zoom: 1;
 }
 
-/* line 54, ../sass/base/_base.scss */
+/* line 57, ../sass/base/_base.scss */
 .clearfix:after {
   content: " ";
   display: block;
@@ -71,6 +76,88 @@ img {
   clear: both;
 }
 
+/* line 66, ../sass/base/_base.scss */
+.blue {
+  color: #4fc8bf;
+}
+
+/* line 1, ../sass/base/_extend.scss */
+.bgColor, .job-detail-title {
+  background: #4fc8bf;
+  color: white;
+}
+
+/* line 5, ../sass/base/_extend.scss */
+.bgMarginColor, .job-part1, .job-part2, .job-part3, .job-part4, .job-part5, .job-part6 {
+  background: white;
+  margin: 1rem 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.4rem;
+  color: #8f918e;
+  padding: .6rem .6rem;
+  text-indent: 1rem;
+  padding-bottom: 1rem;
+  letter-spacing: 1px;
+}
+/* line 15, ../sass/base/_extend.scss */
+.bgMarginColor h3, .job-part1 h3, .job-part2 h3, .job-part3 h3, .job-part4 h3, .job-part5 h3, .job-part6 h3 {
+  margin: 1rem 0;
+  color: #4fc8bf;
+  font-size: 1.6rem;
+}
+
+/* line 2, ../sass/animation/_animation.app.scss */
+.view-container {
+  position: relative;
+}
+
+/* line 7, ../sass/animation/_animation.app.scss */
+.view-frame.ng-enter,
+.view-frame.ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+/* line 13, ../sass/animation/_animation.app.scss */
+.view-frame.ng-enter {
+  z-index: 2;
+  top: 0;
+  animation: 1s fadeIn;
+}
+
+/* line 18, ../sass/animation/_animation.app.scss */
+.view-frame.ng-leave {
+  z-index: 1;
+  top: 100rem;
+  display: none;
+  animation: 1s fadeOut;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    top: 100rem;
+    display: none;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+    display: block;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    top: 0;
+    display: block;
+  }
+  to {
+    opacity: 0;
+    top: 100rem;
+    display: none;
+  }
+}
 /* line 1, ../sass/job/_header-search.scss */
 .search-choose {
   background: white;
@@ -296,7 +383,6 @@ img {
   color: #69d1cb;
   border-top: 1px solid #69d1cb;
   margin: 0 1rem;
-  padding-top: .5rem;
 }
 /* line 49, ../sass/job/_job-list.scss */
 .jobLists .hr_info img {
@@ -321,11 +407,12 @@ img {
   position: fixed;
   bottom: 0;
   left: 0;
+  z-index: 3;
   background: white;
   width: 100%;
   height: 4rem;
 }
-/* line 9, ../sass/job/_my-tabs.scss */
+/* line 10, ../sass/job/_my-tabs.scss */
 .view-tabs .tabItem {
   line-height: 4rem;
   width: 25%;
@@ -333,7 +420,7 @@ img {
   padding-left: 0.83333%;
   padding-right: 0.83333%;
 }
-/* line 12, ../sass/job/_my-tabs.scss */
+/* line 13, ../sass/job/_my-tabs.scss */
 .view-tabs .tabItem a {
   display: inline-block;
   height: 4rem;
@@ -341,11 +428,11 @@ img {
   color: #7d7d7d;
   text-align: center;
 }
-/* line 18, ../sass/job/_my-tabs.scss */
+/* line 19, ../sass/job/_my-tabs.scss */
 .view-tabs .tabItem a.active {
   color: #53cac3;
 }
-/* line 22, ../sass/job/_my-tabs.scss */
+/* line 23, ../sass/job/_my-tabs.scss */
 .view-tabs .tabItem .icon-earth, .view-tabs .tabItem .icon-house, .view-tabs .tabItem .icon-xiaoxi, .view-tabs .tabItem .icon-vipuser {
   width: 100%;
   display: block;
@@ -354,12 +441,234 @@ img {
   font-size: 2rem;
   font-weight: 600;
 }
-/* line 30, ../sass/job/_my-tabs.scss */
+/* line 31, ../sass/job/_my-tabs.scss */
 .view-tabs .tabItem .icon-text {
   font-size: 1.2rem;
   height: 1.5rem;
   line-height: 1.5rem;
   display: block;
+}
+
+/* line 1, ../sass/job/_job-detail-header.scss */
+.job-detail-title {
+  line-height: 4.7rem;
+}
+/* line 5, ../sass/job/_job-detail-header.scss */
+.job-detail-title .detail-head-left {
+  width: 50%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+/* line 7, ../sass/job/_job-detail-header.scss */
+.job-detail-title .detail-head-left .job-share {
+  font-weight: 400;
+}
+/* line 11, ../sass/job/_job-detail-header.scss */
+.job-detail-title .detail-head-right {
+  width: 50%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  text-align: right;
+}
+/* line 15, ../sass/job/_job-detail-header.scss */
+.job-detail-title span[class^="icon-"] {
+  display: inline-block;
+  line-height: 4.7rem;
+  width: 4rem;
+  color: white;
+  text-align: center;
+}
+
+/* line 3, ../sass/job/_job-detail-part1.scss */
+.job-part1 p {
+  margin: 0;
+  padding: 0.6rem 0 0.6rem 0.6rem;
+}
+/* line 7, ../sass/job/_job-detail-part1.scss */
+.job-part1 .ali-title {
+  font-size: 1.6rem;
+  color: #4fc8bf;
+  font-weight: normal;
+}
+/* line 11, ../sass/job/_job-detail-part1.scss */
+.job-part1 .ali-title .aliPay {
+  float: right;
+  padding-right: .5rem;
+  display: inline-block;
+}
+/* line 17, ../sass/job/_job-detail-part1.scss */
+.job-part1 .name_pro {
+  font-size: 1.8rem;
+  color: #353734;
+}
+/* line 21, ../sass/job/_job-detail-part1.scss */
+.job-part1 .loc_edu_exp {
+  font-size: 1.4rem;
+  color: #8f918e;
+}
+/* line 24, ../sass/job/_job-detail-part1.scss */
+.job-part1 .loc_edu_exp span[class^="icon-"] {
+  margin-right: .5rem;
+}
+/* line 27, ../sass/job/_job-detail-part1.scss */
+.job-part1 .loc_edu_exp .icon-benke-, .job-part1 .loc_edu_exp .icon-bag {
+  margin-left: 1.5rem;
+}
+
+/* line 5, ../sass/job/_job-detail-part2.scss */
+.job-part2 .bottomIcon {
+  text-align: center;
+  margin: .6rem 0;
+  font-size: 2rem;
+}
+
+/* line 12, ../sass/job/_job-detail-part2.scss */
+.job-part3 span {
+  margin: .5rem 1rem;
+  display: inline-block;
+}
+/* line 16, ../sass/job/_job-detail-part2.scss */
+.job-part3 .html5 {
+  margin-left: 0;
+  text-indent: 0;
+}
+
+/* line 25, ../sass/job/_job-detail-part2.scss */
+.job-part4 h3 a {
+  display: inline-block;
+  float: right;
+  color: #8f918e;
+  font-weight: normal;
+}
+/* line 32, ../sass/job/_job-detail-part2.scss */
+.job-part4 img {
+  width: 25%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  width: auto;
+}
+/* line 36, ../sass/job/_job-detail-part2.scss */
+.job-part4 figcaption {
+  width: 75%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+/* line 39, ../sass/job/_job-detail-part2.scss */
+.job-part4 time {
+  float: right;
+}
+/* line 42, ../sass/job/_job-detail-part2.scss */
+.job-part4 .item-content {
+  position: relative;
+  height: 40px;
+  background-color: green;
+}
+/* line 46, ../sass/job/_job-detail-part2.scss */
+.toggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  pointer-events: auto;
+  border: 1px solid red;
+}
+/* line 52, ../sass/job/_job-detail-part2.scss */
+.toggle input[type="checkbox"] {
+  opacity: 0.1;
+  filter: alpha(filter=10);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+}
+/* line 62, ../sass/job/_job-detail-part2.scss */
+.toggle input:checked {
+  border-color: #4cd964;
+  background-color: #4cd964;
+}
+/* line 66, ../sass/job/_job-detail-part2.scss */
+.toggle .track {
+  width: 50px;
+  height: 30px;
+  background-color: #4cd964;
+  transition-timing-function: ease-in-out;
+  transition-property: border ,background-color;
+  border-color: solid 2px #e6e6e6;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 75, ../sass/job/_job-detail-part2.scss */
+.toggle .handle {
+  position: absolute;
+  right: 0;
+  width: 27px;
+  height: 27px;
+  z-index: 1;
+  transition: 0.3s cubic-bezier(0, 1.1, 1, 1.1);
+  transition-property: right,background-color;
+  -moz-border-radius: 27px;
+  -webkit-border-radius: 27px;
+  border-radius: 27px;
+  background-color: #fff;
+}
+/* line 86, ../sass/job/_job-detail-part2.scss */
+.toggle input:checked + .handle {
+  right: 23px;
+  background-color: #4cd964;
+}
+
+/* line 96, ../sass/job/_job-detail-part2.scss */
+.job-part5 img {
+  width: 25%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  width: auto;
+}
+/* line 100, ../sass/job/_job-detail-part2.scss */
+.job-part5 figcaption {
+  width: 75%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+
+/* line 105, ../sass/job/_job-detail-part2.scss */
+.job-part6 .pay {
+  float: right;
+}
+/* line 108, ../sass/job/_job-detail-part2.scss */
+.job-part6 .title {
+  float: left;
+}
+/* line 111, ../sass/job/_job-detail-part2.scss */
+.job-part6 .com_pro, .job-part6 .title {
+  color: #393b38;
+}
+
+/* line 117, ../sass/job/_job-detail-part2.scss */
+.ljgt {
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+}
+/* line 124, ../sass/job/_job-detail-part2.scss */
+.ljgt a {
+  display: block;
+  background-color: #4fc8bf;
+  color: #fff;
+  line-height: 4rem;
+  text-align: center;
+  font-size: 2rem;
 }
 
 /* line 1, ../sass/userInfo/_user-info.scss */
@@ -757,7 +1066,7 @@ img {
 
 /* line 1, ../sass/message/_message-list.scss */
 .message-lists {
-  margin: 1rem 1rem;
+  margin: 1rem 1rem 6rem 1rem;
   background: white;
 }
 /* line 4, ../sass/message/_message-list.scss */
@@ -790,26 +1099,27 @@ img {
 }
 /* line 17, ../sass/message/_message-list.scss */
 .message-lists .messItem .messInfo h3 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #363636;
+  font-weight: 600;
   margin-top: .5rem;
 }
-/* line 22, ../sass/message/_message-list.scss */
+/* line 23, ../sass/message/_message-list.scss */
 .message-lists .messItem .messInfo p {
   font-size: 1.4rem;
   color: #797979;
 }
-/* line 26, ../sass/message/_message-list.scss */
+/* line 27, ../sass/message/_message-list.scss */
 .message-lists .messItem .messInfo .text {
   color: #57cbc4;
 }
-/* line 29, ../sass/message/_message-list.scss */
+/* line 30, ../sass/message/_message-list.scss */
 .message-lists .messItem .messInfo span[class^="icon-"] {
   margin-left: .5rem;
   margin-right: .5rem;
   display: inline-block;
 }
-/* line 34, ../sass/message/_message-list.scss */
+/* line 35, ../sass/message/_message-list.scss */
 .message-lists .messItem .messInfo time {
   position: absolute;
   top: 0.5rem;

@@ -6,4 +6,13 @@ angular.module("companyList").
 			controller:["companyResource",function (companyResource){
 				this.companys = companyResource.query();
 			}]
-		});
+		}).
+		component("companyDetail",{
+			templateUrl:"view/company-lists/company-detail/company-detail.template.html",
+			controller:["companyResource","$routeParams",
+					    function (companyResource,$routeParams){
+							this.companyDetails = companyResource.get({paramsId:$routeParams.companyId},function(response){
+								console.log(response);
+							})
+			}]
+});

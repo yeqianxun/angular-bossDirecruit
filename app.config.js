@@ -16,7 +16,7 @@ angular.module("bossWebApp")
 					template :"<company-list></company-list>"
 				}).
 				when("/company/:companyId",{
-					template: "<compan-detail></company-detail>"
+					template: "<company-detail></company-detail>"
 				}).
 				when("/message",{
 					template:"<message-list></message-list>"

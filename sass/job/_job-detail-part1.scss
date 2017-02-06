@@ -1,0 +1,31 @@
+.job-part1{
+	@extend .bgMarginColor;
+	p{
+		margin:0;
+		padding:.6rem 0 .6rem .6rem ;
+	}
+	.ali-title{
+		font-size:1.6rem;
+		color:#4fc8bf;
+		font-weight:normal;
+		.aliPay{
+			float:right;
+			padding-right:.5rem;
+			display:inline-block;
+		}
+	}
+	.name_pro{
+		font-size:1.8rem;
+		color:#353734;
+	}
+	.loc_edu_exp{
+		font-size:1.4rem;
+		color:#8f918e;
+		span[class^="icon-"]{
+			margin-right:.5rem;
+		}
+		.icon-benke-,.icon-bag{
+			margin-left:1.5rem;
+		}
+	}
+}

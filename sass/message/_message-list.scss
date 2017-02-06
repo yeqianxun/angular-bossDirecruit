@@ -1,5 +1,5 @@
 .message-lists{
-	margin:1rem 1rem;
+	margin:1rem 1rem 6rem 1rem;
 	background:white;
 	.messItem{
 		border-bottom:1px solid #b8b8b8;
@@ -15,8 +15,9 @@
 			@include span(9);
 			position:relative;
 			h3{
-				font-size:2rem;
+				font-size:1.6rem;
 				color:#363636;
+				font-weight:600;
 				margin-top:.5rem;
 			}
 			p{

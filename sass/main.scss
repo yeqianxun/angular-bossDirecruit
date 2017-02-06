@@ -1,11 +1,16 @@
 @import "susy",
 		"compass",
-		"base/base"
+		"base/base",
+		"base/extend",
+		"animation/animation.app"
 		;
 
 @import "job/header-search",
 		"job/job-list",
-		"job/my-tabs"
+		"job/my-tabs",
+		"job/job-detail-header",
+		"job/job-detail-part1",
+		"job/job-detail-part2"
 		;
 
 @import "userInfo/user-info",

@@ -3,6 +3,7 @@
 
 angular.module("bossWebApp",[
 	"ngRoute",
+	"ngAnimate",
 	"jobList",
 	"companyList",
 	"messageList",
