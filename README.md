@@ -3,24 +3,26 @@
 
 下面是一些实现效果
 
-![C:\Users\hp\Pictures\移动前端\boss直聘](C:/Users/hp/Pictures/移动前端/boss直聘/1.jpg)
+
+
+![](实际效果图/1.jpg)
 
 
 
-![](C:/Users/hp/Pictures/移动前端/boss直聘/2.jpg)
-
-  
-
-![](C:/Users/hp/Pictures/移动前端/boss直聘/3.jpg)
-
-  
-
-![](C:/Users/hp/Pictures/移动前端/boss直聘/4.jpg)
+![](实际效果图/2.jpg)
 
 
 
-![](C:/Users/hp/Pictures/移动前端/boss直聘/5.jpg)
+![](实际效果图/3.jpg)
 
 
 
-![](C:/Users/hp/Pictures/移动前端/boss直聘/6.jpg)
+![](实际效果图/4.jpg)
+
+
+
+![](实际效果图/5.jpg)
+
+
+
+![](实际效果图/6.jpg)
